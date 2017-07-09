@@ -1,8 +1,10 @@
 ---
-title: "Introducing the Pocket Instant App for Android"
-date: "2017-05-18T08:28:55-04:00"
-author: "Kait"
-categories: ["News"]
+title: Introducing the Pocket Instant App for Android
+draft: false
+author: Kait
+date: '2017-05-18T08:28:55-04:00'
+categories:
+  - News
 ---
 
 ![Pocket Instant App - Article View](/img/uploads/top_unit.png)
@@ -24,3 +26,4 @@ Now, when you open a link shared from Pocket, it will load in our Instant App fo
 Pocket is one of fifty new Instant Apps you can try out on your Android phone or tablet today. We can’t wait to hear what you think! If you’d like to learn more about Android Instant Apps, you can do so [here](https://developer.android.com/topic/instant-apps/index.html). Have other questions about how to get started? The Pocket Support Team is here to help! [Click here](https://getpocket.com/contact_support?subject=Help%20with%20Pocket%20Instant%20App%20for%20Android) to get in touch.
 
 – Team Pocket
+
