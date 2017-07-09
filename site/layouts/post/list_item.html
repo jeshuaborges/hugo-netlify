@@ -1,23 +1,16 @@
-<div class="post type-post status-publish format-standard hentry category-news">
+<div class="post">
   <div class="post_header">
-    <h2><a href="{{ .Permalink }}" rel="bookmark" title="Permanent Link to {{ .LinkTitle }}">{{ .LinkTitle }}</a></h2>
+    <h2><a href="{{ .RelPermalink }}" rel="bookmark" title="Permanent Link to {{ .LinkTitle }}">{{ .LinkTitle }}</a></h2>
     <small><span id="pkt_post_date">{{ .Date.Format "Jan 2, 2006" }}</span>
       &nbsp;&bull;&nbsp; By
       <span id="pkt_post_author">{{ .Params.author }}</span>
     </small>
-    <div class="pktbutton">
-      <a data-pocket-label="pocket"
-        data-pocket-count="horizontal"
-        class="pocket-btn"
-        data-lang="en"
-        data-save-url="{{ .Permalink }}"></a>
-      <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
-    </div>
+    {{ partial "pocket_button" . }}
   </div>
 
-  <div class="entry">
-    {{ .Content }}
-  </div>
+  <div class="entry">{{ .Content }}</div>
 
-  <p class="postmetadata"> Posted in <a href="http://getpocket.com/blog/category/news/" rel="category tag">{{ .Params.category }}</a> </p>
+  {{ range .Params.categories }}
+  <p class="postmetadata"> Posted in <a href="{{ "/categories/" }}{{ . | urlize }}">{{ . }}</q>
+  {{ end }}
 </div>

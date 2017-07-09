@@ -1,21 +1,3 @@
-## TODO
-
-- Categories
-- Homepage link Older Posts
-- Review missing images
-- Press page - https://getpocket.com/blog/press/
-- Validate atom generation and feedburner implemntation
-- Pagination
-  - home page
-  - taxonomy list
-
-## Permanent changes
-
-- Removed login link
-- Removed logged in state in header
-  - Would have to switch to JS
-
-
 # Victor Hugo
 
 **A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
@@ -105,5 +87,28 @@ You can also click this button:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
 
 
+## TODO
 
-## Enjoy!!
+Hugo:
+
+- [x] Categories
+  - [ ] Can convert to singular / post?
+- [ ] Homepage link Older Posts
+- [ ] Review missing images
+- [ ] Press page - https://getpocket.com/blog/press/
+- [ ] Validate atom generation and feedburner implemntation
+- [ ] Pagination
+  - [ ] home page
+  - [ ] taxonomy list
+- [ ] Backfill content
+
+Netlify CMS:
+
+- [ ] Accurate Preview
+- [ ] Test publish workflow
+
+## Permanent changes
+
+- Removed login link
+- Removed logged in state in header
+  - Would have to switch to JS

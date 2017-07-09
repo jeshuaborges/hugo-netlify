@@ -1,0 +1,63 @@
+@import "../fonts.css";
+@import "../sliced.css";
+
+h1, h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #5dcfca;
+  font-family: ProximaNova, Arial, sans-serif;
+}
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 35px 0px 15px 0px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+h5 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(71, 143, 143);
+}
+
+p {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+ul {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+img {
+  display: block;
+  margin: 0px auto 0px auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 660px;
+}
+
+.post {
+  width: 660px;
+}

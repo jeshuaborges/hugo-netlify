@@ -1,5 +1,20 @@
 {{ partial "header" . }}
 
-{{ .Render "list_item"}}
+<div class="post">
+  <div class="post_header">
+    <h2>{{ .LinkTitle }}</h2>
+    <small><span id="pkt_post_date">{{ .Date.Format "Jan 2, 2006" }}</span>
+      &nbsp;&bull;&nbsp; By
+      <span id="pkt_post_author">{{ .Params.author }}</span>
+    </small>
+    {{ partial "pocket_button" . }}
+  </div>
+
+  <div class="entry">{{ .Content }}</div>
+
+  {{ range .Params.categories }}
+  <p class="postmetadata"> Posted in <a href="{{ "/categories/" }}{{ . | urlize }}">{{ . }}</q>
+  {{ end }}
+</div>
 
 {{ partial "footer" . }}

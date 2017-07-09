@@ -7,8 +7,32 @@
 
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@~0.4/dist/cms.css" />
 
+  <!-- Icon stuff (incomplete) -->
+  <link rel="icon" href="/img/icon/Pocket_AppIcon_144.png">
+  <meta name="msapplication-TileImage" content="/img/icon/Pocket_AppIcon_144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/icon/Pocket_AppIcon_57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/icon/Pocket_AppIcon_72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icon/Pocket_AppIcon_114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/icon/Pocket_AppIcon_144.png" />
+
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms@~0.4/dist/cms.js"></script>
+<script src="https://unpkg.com/netlify-cms@~0.4/dist/cms.js"></script>
+<script>
+var PostPreview = createClass({
+  render: function() {
+    var entry = this.props.entry;
+
+    return h('div', {"className": "post"},
+      h('h1', {}, entry.getIn(['data', 'title'])),
+      h('div', {"className": "text"}, this.props.widgetFor('body'))
+    );
+  }
+});
+
+CMS.registerPreviewStyle("/css/cms/preview.css");
+CMS.registerPreviewTemplate("posts", PostPreview);
+
+</script>
 </body>
 </html>

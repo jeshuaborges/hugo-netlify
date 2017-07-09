@@ -19,9 +19,10 @@
 
     <h5>Latest Posts</h5>
     <ul class="latest_posts">
-      {{ range first 5 (where $.Site.Pages "Kind" "page") }}
+      <!-- range first 5 (where $.Site.Pages "Kind" "page") -->
+      {{ range first 5 $.Site.Pages }}
       <li>
-        <a href="{{ .Permalink }}" rel="bookmark" title="Permanent Link to {{ .LinkTitle }}">{{ .LinkTitle }}</a>
+        <a href="{{ .RelPermalink }}" rel="bookmark" title="Permanent Link to {{ .LinkTitle }}">{{ .LinkTitle }}</a>
       </li>
       {{ end }}
     </ul>

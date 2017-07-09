@@ -1,17 +1,21 @@
 backend:
   name: github
-  repo: jeshuaborges/hugo-netlify # Path to your Github repository
-  branch: master # Branch to update (master by default)
+  repo: jeshuaborges/hugo-netlify
+  branch: master
 
-media_folder: "static/img/uploads" # Folder where user uploaded files should go
+media_folder: "static/img/uploads"
+public_folder: "img/uploads"
 
-collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "site/content/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      # - {label: "Foo", name: "foo", widget: "foo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "string", default: "List [ \"News\" ]"}
