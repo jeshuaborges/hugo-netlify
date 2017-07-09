@@ -1,0 +1,15 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Pocket Blog"
+googleAnalytics = "UA-370613-9"
+
+[permalinks]
+post = "/:year/:month/:title/"
+
+[params]
+title = "Sample Title"
+author = "Sample Author"
+categories = ["News"]
+
+[taxonomies]
+category = "categories"
