@@ -92,7 +92,6 @@ You can also click this button:
 Hugo:
 
 - [x] Categories
-  - [ ] Can convert to singular / post?
 - [ ] Homepage link Older Posts
 - [ ] Review missing images
 - [ ] Press page - https://getpocket.com/blog/press/
@@ -104,8 +103,9 @@ Hugo:
 
 Netlify CMS:
 
-- [ ] Accurate Preview
-- [ ] Test publish workflow
+- [x] Accurate Preview
+- [x] Categories widget (comma separated)
+- [x] Test publish workflow
 
 ## Permanent changes
 

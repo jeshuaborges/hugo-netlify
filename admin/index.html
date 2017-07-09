@@ -30,6 +30,23 @@ var PostPreview = createClass({
   }
 });
 
+var CategoriesControl = createClass({
+  handleChange: function(e) {
+    this.props.onChange(e.target.value.split(',').map((e) => e.trim()));
+  },
+
+  render: function() {
+    var value = this.props.value;
+
+    return h('input', {
+      type: 'text',
+      value: value ? value.join(', ') : '',
+      onChange: this.handleChange
+    });
+  }
+});
+
+CMS.registerWidget('categories', CategoriesControl);
 CMS.registerPreviewStyle("/css/cms/preview.css");
 CMS.registerPreviewTemplate("posts", PostPreview);
 

@@ -18,4 +18,4 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string", default: "List [ \"News\" ]"}
+      - {label: "Categories", name: "categories", widget: "categories", default: "News"}
