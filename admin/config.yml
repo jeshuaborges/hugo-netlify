@@ -3,7 +3,7 @@ backend:
   repo: jeshuaborges/hugo-netlify
   branch: master
 
-media_folder: "static/img/uploads"
+media_folder: "site/static/img/uploads"
 public_folder: "img/uploads"
 
 collections:
