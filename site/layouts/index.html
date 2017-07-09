@@ -1,14 +1,9 @@
 {{ partial "header" . }}
 
-{{ range first 5 .Data.Pages }}
+{{ range .Paginator.Pages }}
     {{ .Render "list_item" }}
 {{ end }}
 
-<!--
-<div class="navigation">
-  <div class="alignleft"><a href="/blog/page/2/" >&laquo; Older Posts</a></div>
-  <div class="alignright"></div>
-</div>
--->
+{{ template "_internal/pagination.html" . }}
 
 {{ partial "footer" . }}

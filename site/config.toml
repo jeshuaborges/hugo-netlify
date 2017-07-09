@@ -2,6 +2,7 @@ baseurl = "https://jb-blog-demo.netlify.com/"
 languageCode = "en-us"
 title = "Pocket Blog"
 googleAnalytics = "UA-370613-9"
+Paginate = 5
 
 # See www.emoji-cheat-sheet.com
 enableEmoji = true
