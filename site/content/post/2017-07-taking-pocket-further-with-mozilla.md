@@ -1,8 +1,8 @@
 ---
 title: Taking Pocket Further with Mozilla
-draft: true
+draft: false
 author: Nate
-date: 2017-02-26T19:49:41-05:00
+date: 2017-02-27T00:49:41.000Z
 categories:
   - News
 ---
@@ -39,3 +39,4 @@ If you have any questions about the news, we encourage you to [reach out to the 
 Looking forward to what’s next!
 
 – Nate (Pocket CEO/Founder) and the entire Pocket team
+
