@@ -1,6 +1,6 @@
 ---
 title: Making the web a more interesting place
-draft: true
+draft: false
 author: Kait
 date: 2017-07-09T23:53:22.796Z
 categories:
@@ -21,4 +21,5 @@ For the first time, we are opening up Pocket’s understanding of what’s good 
 [Head to Pocket’s new Explore Page and give it a spin for yourself](http://www.getpocket.com/explore).
 
 ![Explore Page](/img/uploads/Blog+Post+Topic.png)
+
 
