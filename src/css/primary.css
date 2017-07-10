@@ -398,16 +398,16 @@ footer p { float:left; font:12px/12px 'Conv_HelveticaNeueLTStd-Roman', Arial, He
 .footer_social_link ul { float:left; list-style:none; }
 .footer_social_link ul li { float:left; padding-left:15px; }
 .footer_social_link ul li a { width:19px; height:18px; float:left; display:inline; margin-top:-4px; position:relative; overflow: hidden; text-indent: -9999px; }
-.footer_social_link ul li a.twitter { background:url(/i/v4/footer_socialicons@1x.png) 0 1px no-repeat; width: 22px; height: 21px;}
+.footer_social_link ul li a.twitter { background:url(/img/footer_socialicons@1x.png) 0 1px no-repeat; width: 22px; height: 21px;}
 .footer_social_link ul li a.twitter:hover { background-position: -200px 1px; }
-.footer_social_link ul li a.facebook { background:url(/i/v4/footer_socialicons@1x.png) 0 -80px no-repeat; width: 9px; height: 21px; }
+.footer_social_link ul li a.facebook { background:url(/img/footer_socialicons@1x.png) 0 -80px no-repeat; width: 9px; height: 21px; }
 .footer_social_link ul li a.facebook:hover { background-position: -200px -80px; }
-.footer_social_link ul li a.googleplus { background:url(/i/v4/footer_socialicons@1x.png) 0 -159px no-repeat; width: 22px; height: 21px; }
+.footer_social_link ul li a.googleplus { background:url(/img/footer_socialicons@1x.png) 0 -159px no-repeat; width: 22px; height: 21px; }
 .footer_social_link ul li a.googleplus:hover { background-position: -200px -159px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .footer_social_link ul li a.twitter,
-  .footer_social_link ul li a.facebook { background-image: url(/i/v4/footer_socialicons@2x.png); background-size: 240px 400px; }
-  .footer_social_link ul li a.googleplus { background-image: url(/i/v4/footer_socialicons@2x.png); background-size: 240px 400px; }
+  .footer_social_link ul li a.facebook { background-image: url(/img/footer_socialicons@2x.png); background-size: 240px 400px; }
+  .footer_social_link ul li a.googleplus { background-image: url(/img/footer_socialicons@2x.png); background-size: 240px 400px; }
 }
 /*******************footer css ends here****************************/
 

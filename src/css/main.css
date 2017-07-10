@@ -4,6 +4,10 @@
 @import "primary.css";
 @import "wp.css";
 
+#content h3 {
+  font-weight: bold;
+}
+
 .post .entry img {
   display: block;
   margin: 0px auto 0px auto;
@@ -14,4 +18,20 @@
 
 .categories li {
   text-transform: capitalize;
+}
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination .previous {
+  float: right;
+}
+
+.pagination .next {
+  float: left;
+}
+
+.pagination .disabled {
+  display: none;
 }

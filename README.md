@@ -92,13 +92,14 @@ You can also click this button:
 Hugo:
 
 - [x] Categories
-- [ ] Homepage link Older Posts
-- [ ] Review missing images
-- [ ] Press page - https://getpocket.com/blog/press/
-- [ ] Validate atom generation and feedburner implemntation
-- [ ] Pagination
-  - [ ] home page
-  - [ ] taxonomy list
+- [x] Review missing images
+- [.] Press page - https://getpocket.com/blog/press/
+  - [x] Setup
+  - [ ] Cleanup
+- [ ] Validate atom generation and feedburner implemntation still work, How?
+- [x] Pagination
+  - [x] home page
+  - [x] taxonomy list
 - [ ] Backfill content
 
 Netlify CMS:

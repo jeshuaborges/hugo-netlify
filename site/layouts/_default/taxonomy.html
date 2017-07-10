@@ -3,13 +3,10 @@
 <h2 class="pagetitle">Archive for the &#8216;{{ .Title }}&#8217; Category</h2>
 <p><a href="/">&laquo; Pocket Blog</a></p>
 
-<div class="navigation">
-  <div class="alignleft"></div>
-  <div class="alignright"></div>
-</div>
+{{ partial "pages" . }}
 
-{{ range first 5 .Data.Pages }}
-    {{ .Render "list_item"}}
+{{ range .Paginator.Pages }}
+    {{ .Render "list_item" }}
 {{ end }}
 
 {{ partial "footer" . }}
