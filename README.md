@@ -96,10 +96,10 @@ Hugo:
 - [.] Press page - https://getpocket.com/blog/press/
   - [x] Setup
   - [ ] Cleanup
-- [ ] Validate atom generation and feedburner implemntation still work, How?
 - [x] Pagination
   - [x] home page
   - [x] taxonomy list
+- [ ] Validate atom generation and feedburner implemntation still work, How?
 - [ ] Backfill content
 
 Netlify CMS:

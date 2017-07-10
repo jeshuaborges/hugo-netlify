@@ -6,7 +6,19 @@ backend:
 media_folder: "site/static/img/uploads"
 public_folder: "img/uploads"
 
+
+
 collections:
+  - name: "press"
+    label: "Press"
+    folder: "site/content/press"
+    create: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+
   - name: "posts"
     label: "Posts"
     folder: "site/content/post"
